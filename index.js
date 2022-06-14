@@ -26,8 +26,8 @@ function createTweet() {
 
 }
 function appendToNewsFeed() {
-  const container = document.getElementById("tweet-container")
-  container.innerHTML = ''
+  const container = document.getElementById("tweet-container");
+  container.innerHTML = '';
 
   for (let i = 0; i < tweets.length; i++) {
     container.appendChild(tweets[i]);
