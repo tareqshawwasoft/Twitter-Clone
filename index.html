@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <!-- I chose the name 'Twttr' because it is the name that it was called on it was called first, before 'twitter' -->
+    <title>Twttr</title>
+<!-- icon used -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Style.css" >
+
+    <script src="index.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- navigation bar start -->
+      <a href="#"><h1 class="site-title"><i class="far fa-hand"></i> Twttr</h1></a>
+    </header>
+    <div class="content">
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navlink"><a href="#">Trending</a></li>
+          <li class="navitem navlink"><a href="#">People</a></li>
+          <li class="navitem navlink"><a href="#">Notifications</a></li>
+          <li class="navitem navlink"><a href="#">Messages</a></li>
+          <li class="navitem navlink"><a href="#">Profile</a></li>
+          <li class="navitem navlink"><a href="#">More</a></li>
+          
+        </ul>
+      </nav>
+      <!-- navigation bar end -->
+
+      <!-- content start -->
+    <div id="input-content">
+      <div>
+        <div class="draft-body">
+          <div class="tweet-input-element">
+            <label for="tweet-attribution-input">Author</label>
+            <input type="text" id="tweet-attribution-input">
+          </div>
+          <div class="tweet-input-element">
+            <label for="tweet-text-input">Tweet text</label>
+            <textarea style="resize: none;"  id="tweet-text-input"  maxlength="140"></textarea>
+            
+          </div>
+          <div class="draft-footer">
+            <button type="button" class="draft-accept-button">Publish Tweet</button>
+          </div>
+        
+        </div>
+        <button type="button" hidden id="create-tweet-button">Create Tweet</button></div>
+        <hr style="width: 80%;">
+    <main class="tweet-container" id="tweet-container">
+     
+      <article class="tweet" id="f-tweet">
+        <div class="tweet-content">
+          <div class="tweet-icon"><i class="fas fa-dove"></i>
+            <p class="tweet-author">Jack Dorsey</p>
+          </div>
+          <textarea readonly id="content_of_tweet" class="tweet-text">just set up my twttr</textarea>
+        </div>
+        <div class="interactions"><input id="like" class="like" type="submit" style="width:75px" value="Like">
+          <input type="submit"
+            class="retweet" id="retweet" style="width:75px" value="Retweet"></div>
+      </article>
+     
+    </main></div>
+          <!-- content  end-->
+
+          <!-- trending news start -->
+    <news class="news">
+      <div class="trending">
+        <h3>Trending now!</h3>
+      </div>
+      <article class="trendingTweet">
+          <p id="tweet-trend" class="tweet-text">
+           Real Madrid win the Champions League
+          </p>
+          <img id="trend-img" src="https://cdn.vox-cdn.com/thumbor/OFP6SsPvtpMgTYD346TutVLMPRU=/0x0:3687x2804/920x613/filters:focal(1550x1108:2138x1696):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70445092/962885828.0.jpg" alt="ucl" width="200px">
+      </article>
+      <article class="trendingTweet">
+          <p id="tweet-trend" class="tweet-text">
+           Audio Books arrive to spotify!
+          </p>
+          <img id="trend-img" src="https://cdn.vox-cdn.com/thumbor/9xM0VMbE_MKy5QbYMK5SM1XHQ_k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22026912/acastro_201110_4286_spotify_0001.jpg" alt="spotify" width="200px">
+      </article>
+      <article class="trendingTweet">
+          <p id="tweet-trend" class="tweet-text">
+            PYTHON IN THE WEB BROWSER.. <a href="https://hackaday.com/2022/06/08/pyscript-python-in-the-web-browser/" style="color:rgb(54, 196, 252);" target="_blank">here </a>
+          </p>
+          <img id="trend-img" src="https://hackaday.com/wp-content/uploads/2022/06/python.png?w=800" alt="ios" width="200px">
+      </article>
+     
+      <article class="trendingTweet">
+          <p id="tweet-trend" class="tweet-text">
+            IOS 16 arrives in september...
+          </p>
+          <img id="trend-img" src="https://www.cnet.com/a/img/resize/6bb75169faa16053c7b30a7bd3495ebae92616db/2022/06/03/a23d9259-5386-4729-86e8-d9c91e48ee60/ios-16-black.jpg?auto=webp&fit=crop&height=488&width=868" alt="ios" width="200px">
+      </article>
+     
+    </news>
+  </div>
+            <!-- trending news end -->
+
+
+
+
+  </body>
+
+</html>
