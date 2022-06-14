@@ -16,6 +16,7 @@ function createTweet() {
 
   if (tweetText == "" || author == "") {
     alert("Please insert author name and the tweet text to post the tweet!");
+    return;
   }
 
   // used unshift to place to newest element upfront
